@@ -1,6 +1,12 @@
+import { contactUsAction } from "../action";
+
 export default function ContactForm() {
+
   return (
-    <form className="flex items-center flex-col gap-3">
+    <form
+      className="flex items-center flex-col gap-3"
+      action={contactUsAction}
+    >
       <h2 className="text-2xl font-semibold">Contact Us</h2>
       <input
         type="name"
